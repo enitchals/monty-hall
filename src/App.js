@@ -3,12 +3,7 @@ import './App.css';
 import Door from './Components/Door.js';
 import Welcome from './Components/Welcome.js';
 
-const door1 = require('./img/door1.jpg');
-const door2 = require('./img/door2.jpg');
-const door3 = require('./img/door3.jpg');
-const goat = require('./img/goat.jpg');
 const GOAT = require('./img/the-goat.png');
-const prize = require('./img/prize.jpg');
 
 class App extends Component {
   constructor() {
@@ -112,9 +107,9 @@ firstDoorPick = (door) => {
         {(this.state.intro)
           ? null
           : <div className="door-row box">
-            <Door door="1" doorImg = {door1} firstDoorPick = {() => this.firstDoorPick(1)} revealDoor={this.state.revealDoor} secondPick={this.state.secondPick} prizeDoor={this.state.prizeDoor}/>
-            <Door door="2" doorImg = {door2} firstDoorPick = {() => this.firstDoorPick(2)} revealDoor={this.state.revealDoor} secondPick={this.state.secondPick} prizeDoor={this.state.prizeDoor}/>
-            <Door door="3" doorImg = {door3} firstDoorPick = {() => this.firstDoorPick(3)} revealDoor={this.state.revealDoor} secondPick={this.state.secondPick} prizeDoor={this.state.prizeDoor}/>
+            <Door door="1" firstDoorPick = {() => this.firstDoorPick(1)} revealDoor={this.state.revealDoor} secondPick={this.state.secondPick} prizeDoor={this.state.prizeDoor}/>
+            <Door door="2" firstDoorPick = {() => this.firstDoorPick(2)} revealDoor={this.state.revealDoor} secondPick={this.state.secondPick} prizeDoor={this.state.prizeDoor}/>
+            <Door door="3" firstDoorPick = {() => this.firstDoorPick(3)} revealDoor={this.state.revealDoor} secondPick={this.state.secondPick} prizeDoor={this.state.prizeDoor}/>
             </div>}
         <div className="Text box">
           <div className="title">Monty Hall Simulator</div>
