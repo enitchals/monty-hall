@@ -62,14 +62,18 @@ th, td {
 }
 
 .title, h3{
-  color: indigo;
+  color: teal;
   font-family: 'Permanent Marker', cursive;
+}
+
+th {
+  color: teal;
 }
 
 .buttons {
   padding: .5rem;
   margin: 1rem;
-  color: indigo;
+  color: teal;
   font-weight: bold;
 }
 
