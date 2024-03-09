@@ -11,7 +11,6 @@ export default class Door extends Component {
         super(props);
     }
     render(props) {
-        console.log(this.props.door);
         return(
             <div className="door">
                 {(this.props.revealDoor == this.props.door)
